@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 # Install a custom MongoDB version - https://www.mongodb.org/
 #
 # Add at least the following environment variables to your project configuration
