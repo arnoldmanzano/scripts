@@ -14,7 +14,8 @@ MONGODB_DIR=${MONGODB_DIR:="$HOME/mongodb"}
 MONGODB_STORAGE_ENGINE=${MONGODB_STORAGE_ENGINE:="wiredTiger"}
 MONGODB_WAIT_TIME=${MONGODB_WAIT_TIME:="10"}
 MONGODB_START=${MONGODB_START:="Y"}
-UBUNTU_VERSION="$(lsb_release -r -s)"
+# hardcoding 20, since downloads for 24 is not available
+UBUNTU_VERSION="20" 
 
 set -e
 CACHED_DOWNLOAD="${HOME}/cache/mongodb-linux-x86_64-${MONGODB_VERSION}.tgz"
